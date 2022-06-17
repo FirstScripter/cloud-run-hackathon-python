@@ -37,6 +37,12 @@ def move():
     curstate= requset.state
     curX = curstate[2]
     curY = curstate[3]
+    curDirect = curstate[4]
+    curwashit = curstate[5]
+    curscore = curstate[6]
+    
+    app.logger.info (curX)
+    
     #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
     return moves[random.randrange(len(moves))]
