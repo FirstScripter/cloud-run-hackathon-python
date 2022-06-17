@@ -35,7 +35,6 @@ def move():
     logger.info(request.json)
     selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
-    print selfurl
     return moves[random.randrange(len(moves))]
  
 
