@@ -41,7 +41,7 @@ def move():
     curwashit = curstate[5]
     curscore = curstate[6]
     
-    app.logger.info (curX)
+    app.logger.info ('Test')
     
     #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
