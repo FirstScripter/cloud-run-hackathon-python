@@ -36,6 +36,7 @@ def move():
     selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
     print selfurl
+    return moves[random.randrange(len(moves))]
  
 
 if __name__ == "__main__":
