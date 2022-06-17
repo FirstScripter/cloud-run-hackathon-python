@@ -33,7 +33,7 @@ def index():
 def move():
     request.get_data()
     logger.info(request.json)
-    selfurl = request.values.get('self')
+    #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
     return moves[random.randrange(len(moves))]
  
