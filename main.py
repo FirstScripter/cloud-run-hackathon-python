@@ -42,15 +42,16 @@ def move():
     curwashit = curstate[5]
     curscore = curstate[6]
     
-    print(curX)
-    
-   # if curDirect = 'N':
-   #     if curX = 0
-   #        strDims = '
+    if curDirect = 'N':
+       if curX != 0:
+          strAction = 'T'
+       elseif curX=0:
+            if curY =0:
+                strAction = 'R'
     
     #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
-    return moves[random.randrange(len(moves))]
+    return strAction
  
 
 if __name__ == "__main__":
