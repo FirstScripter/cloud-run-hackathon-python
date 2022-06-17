@@ -34,6 +34,7 @@ def index():
 def move():
     request.get_data()
     logger.info(request.json)
+    curDims = request.dims
     curstate= requset.state
     curX = curstate[2]
     curY = curstate[3]
@@ -41,7 +42,11 @@ def move():
     curwashit = curstate[5]
     curscore = curstate[6]
     
-    app.logger.info ('Test')
+    print(curX)
+    
+   # if curDirect = 'N':
+   #     if curX = 0
+   #        strDims = '
     
     #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
