@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
 shot = ['T', 'L', 'R'];
+selfurl = 'https://cloud-run-hackathon-python-2qprbru23q-uc.a.run.app'
 
 @app.route("/", methods=['GET'])
 def index():
@@ -33,6 +34,9 @@ def index():
 def move():
     request.get_data()
     logger.info(request.json)
+    curstate= requset.state
+    curX = curstate[2]
+    curY = curstate[3]
     #selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
     return moves[random.randrange(len(moves))]
