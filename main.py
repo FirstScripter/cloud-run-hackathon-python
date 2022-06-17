@@ -33,8 +33,9 @@ def index():
 def move():
     request.get_data()
     logger.info(request.json)
+    selfurl = request.values.get('self')
     # return moves[random.randrange(len(moves))]
-    return shot[random.randrange(len(shot))]
+    return selfurl
 
 if __name__ == "__main__":
   app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
